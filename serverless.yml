@@ -1,0 +1,18 @@
+service: roast-me
+
+provider:
+  name: aws
+  stage: prod
+  runtime: nodejs12.x
+  region: us-east-1
+  memorySize: 128
+  timeout: 5
+  environment:
+    ALEXA_SKILL_ID: insert_alexa_id_here
+
+functions:
+  roastMe:
+    handler: index.handler
+    name: ${self:service}-${self:provider.stage}
+    events:
+      - alexaSkill: ${self:provider.environment.ALEXA_SKILL_ID}

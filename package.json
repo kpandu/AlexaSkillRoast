@@ -1,0 +1,17 @@
+{
+  "name": "roast-me",
+  "version": "2.0.0",
+  "description": "Roasts you",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Krishan",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "2.10.1",
+    "ask-sdk-model": "1.34.1",
+    "axios": "^0.21.1"
+  }
+}
